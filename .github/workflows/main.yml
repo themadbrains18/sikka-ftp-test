@@ -1,4 +1,6 @@
 on: push
+  push:
+    branches: [gh-pages]
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -14,5 +16,5 @@ jobs:
         server: theuxuidesigner.com
         username: uiuxabhi@theuxuidesigner.com
         password: ${{ secrets.madbrains_uiux_ftp }}
-        local-dir: ./frontend/build/
+        local-dir: ./frontend/
         server-dir: skikka.theuxuidesigner.com/public_html/
