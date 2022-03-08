@@ -1,0 +1,79 @@
+
+
+.sec_coin_trade_data{
+    .tabs_button div{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .view_more_btn .t-normal-color{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: 0.3s;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .view_more_btn:hover{
+        .t-normal-color{
+            color:$cta-color;
+        }
+        span svg path{
+            stroke: $cta-color;
+        }
+    }
+    .tabs_button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .tab_btn{
+            border: 0.5px solid rgba($color: $txt-normal-color, $alpha: 0.5);
+            padding: 10px 25px;
+            border-radius: 4px;
+            color: $txt-normal-color;
+            transition: 0.3s;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .tab_btn:hover,.tab_btn.active{
+            background-color: $txt-normal-color;            
+            color: $bg-normal-color;
+        }
+    }
+    .tabs__bottom_line{
+        display: block;
+        margin: 30px 0;
+        width: 100%;
+        height: 0.5px;
+        background-color: rgba($color: $txt-normal-color, $alpha: 0.3);
+    }
+     .content_heading ul{
+        display: grid;
+        grid-template-columns:  repeat(5,1fr);
+        align-items: center;
+        padding: 10px 20px;
+        gap: 20px;
+        li{
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .m_tabs_btn_dropdown{
+        text-align: start;
+        div{
+            flex-direction: column;
+            position: absolute;
+            transform: translateY(20px);
+            gap: 10px;
+            padding: 10px;
+            background-color: $bg-secondary-color;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ccc;
+            z-index: 100;
+            button{
+                width: 100%;
+            }
+        }
+    }
+}
+

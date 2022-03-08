@@ -1,0 +1,101 @@
+.market_slider{
+    position: relative;
+    overflow: hidden;
+    .swiper-button-next, .swiper-button-prev{
+        padding: 30px 30px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+    }
+    .swiper-button-next{
+        left: auto;
+        right: 0;
+    }
+    .swiper-button-prev{
+        right: auto;
+        left: 0;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after{
+        color: rgba($color: #fff, $alpha: 0.6);
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .swiper-button-prev.swiper-button-disabled,.swiper-button-next.swiper-button-disabled{
+        display: none;
+    }
+    .market_card_footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .card_header{
+        padding-bottom: 20px;
+    }
+    .card_footer{
+        margin-top: 0;
+    }
+    .price{
+        border: none;
+        padding-bottom: 0;
+        font-size: 22px;
+        span{
+            font-size: 12px;
+        }
+    }
+    .card_body_heading{
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+}
+
+.market_slider::after,.market_slider::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 458px;
+    height: 100%;
+    background: linear-gradient(180deg, #F7F8FA 0%, rgba(247, 248, 250, 0) 100%);
+    border-radius: 0px 0px 178px 0px;
+    
+}
+
+.market_slider::after{
+    left: auto;
+    right: 0;
+    height: 100%;
+    border-radius: 0px  0px 0px 178px;
+}
+
+
+/* Responsive Css Code */
+
+/* Breackpoint 767px */
+@media only screen and (max-width: 767px){
+    .market_slider{
+        .swiper-button-next,.swiper-button-prev{
+            display: none;
+        }
+        .slider_card{
+            padding: 25px 15px;
+        }
+        .container{
+            padding-right: 0;
+        }
+        .price{
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+            span{
+                margin: 0;
+            }
+        }
+        .cta_button{
+            padding: 8px 10px;
+        }
+    } 
+    
+}
+

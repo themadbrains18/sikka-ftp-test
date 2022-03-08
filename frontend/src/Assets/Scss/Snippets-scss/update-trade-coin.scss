@@ -1,0 +1,222 @@
+.update_trending_coin_tabs{
+    .coins_price{
+        height: 540px;
+        overflow-y: scroll;
+    }
+
+    .coins_price::-webkit-scrollbar-track{
+        background-color: #F5F5F5;
+    }
+
+    .coins_price::-webkit-scrollbar{
+        width: 5px;
+    }
+    .coins_price::-webkit-scrollbar-thumb{
+        background-color: #636f7d47;
+    }
+    .coins_price li ul{
+        display: grid;
+        grid-template-columns:  repeat(5,1fr);
+        align-items: center;
+        gap: 20px;
+        li:first-child .coin{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    .buy__trade__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        .trade_btn{
+            color: $primary-color;
+            padding: 8px 25px;
+            border: 0.5px solid $primary-color;
+            border-radius: 4px;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .trade_btn:hover{
+            color: #091133;
+            background-color: $primary-color;
+        }
+    }
+    .coins_price>li{
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 0.2px solid rgba(99, 111, 125, 0.1);
+        border-radius: 4px;
+        margin-top: 20px;
+        transition: 0.3s;
+    }
+    .coins_price>li:hover{
+        background: rgba(153, 150, 150, 0.05);
+    }
+    .coin span:nth-child(2){
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .coin span:last-child{
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .last_price .t-primary-color{
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .coin_name{
+        gap: 6px;
+        display: flex;
+        align-items: center;
+    }
+    .h_changes .f-normal-colorm,.coin>div span{
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .h_changes .f-normal-colorm,.coin>div span:nth-child(2){
+        color: $txt-normal-color;
+    }
+    
+    .coin .m_price {
+        display: none;
+    }
+    .h_changes .f-normal-color{
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+.buy_sell_btn{
+    display: none;
+}
+.m_tabs_btn_dropdown{
+    display: none!important;
+}
+
+/* Responsive Css Code */
+/* Breackpoint 991px */
+@media only screen and (max-width: 991px){
+    .sec_coin_trade_data{
+        .content_heading ul li:nth-child(2),.last_price{
+            display: none;
+        }
+        .content_heading ul{
+            grid-template-columns: repeat(4, 1fr)!important;
+        }   
+        .update_trending_coin_tabs .coins_price li ul{
+            grid-template-columns: repeat(4, 1fr);
+        }    
+        .m_price.t-primary-color{
+            display: block;
+            color: $txt-primary-color;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    .update_trending_coin_tabs{
+        .coins_price > li{
+            padding: 10px 15px;
+        }   
+        .buy__trade__button .trade_btn{
+            padding: 5px 15px;
+        }
+    }
+    .sec_coin_trade_data .content_heading ul{
+        padding: 10px 15px!important;
+    }
+    .dropdown_bg_layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        z-index: 99;
+    }
+}
+
+/* Breackpoint 767px */
+@media only screen and (max-width: 767px){
+    .update_trending_coin_tabs .buy__trade__button{
+        display: none;
+    }
+    .sec_coin_trade_data {
+        .content_heading ul li:last-child{
+            display: none;
+        }
+        .content_heading ul,.update_trending_coin_tabs .coins_price li ul{
+            grid-template-columns: 1fr 1fr 1fr!important;
+        }
+        .content_heading ul li:nth-child(3),.h_changes{
+            order: 1;
+            text-align: end;
+        }
+    }
+    .update_trending_coin_tabs{
+        .coin > div span{
+            font-size: 16px;
+        }
+        .coin span:last-child{
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .coins_price li ul li:first-child .coin{
+            gap: 6px;
+        }
+        .coin_name{
+            gap: 4px;
+        }
+        .coins_price > li {
+            padding: 10px;
+        }
+    }
+    .sec_coin_trade_data{
+        .content_heading ul li{
+            font-size: 12px!important;
+        }
+        .content_heading ul{
+            padding: 10px!important;
+        }
+    } 
+    .h_changes .f-normal-color{
+        font-size: 14px;
+    } 
+    .sec_coin_trade_data{
+        .tabs_button .d_tabs_btn_dropdown{
+            display: none!important;
+        }
+        .m_tabs_btn_dropdown{
+            display: block!important;
+            .tab_btn{
+                background-color: $txt-normal-color;
+                color: $bg-normal-color!important;
+            }
+        }
+        .tabs_button .tab_btn{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+    .update_trending_coin_tabs .coins_price{
+        height: 410px;
+    }
+    .sec_coin_trade_data .tabs__bottom_line{
+        margin: 15px 0 10px!important;
+    }
+    .buy_sell_btn{
+        display: block;
+    }
+}
+
+/* Breackpoint 575px */
+@media only screen and (max-width: 575px){
+.sec_coin_trade_data .content_heading ul,
+.sec_coin_trade_data .update_trending_coin_tabs .coins_price li ul {
+    grid-template-columns: 125px 1fr 1fr !important;
+}
+}

@@ -1,0 +1,170 @@
+.sec_online_anytime{
+    .counter{
+        display: flex;
+        gap: 30px;
+        
+    }
+    .counter_card{
+        border: 1px solid #636F7D;
+        border-radius: 4px;
+        height: 100%;
+        padding: 15px 20px;
+        >span{
+            margin-bottom: 8px;
+        }
+        span span{
+            color:$cta-color;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        span{
+            font-size: 22px;
+            font-weight: 500;
+            display: flex;
+            align-items: baseline;
+            gap: 5px;
+        }
+        .counter_category{
+            color: rgba($color: #fff, $alpha: 0.7);
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .boder_line{
+        display: block;
+        background-color: rgba(99, 111, 125, 0.3);
+        max-width: 210px;
+        width: 100%;
+        height: 3px;
+        border-radius: 10px;
+        margin:  80px auto;
+    }
+    .sec__img{
+        text-align: center;
+        position: relative;
+        width: fit-content;
+        margin: 30px auto 85px auto;
+        img{
+            position: relative;
+            z-index: 2;
+        }
+        span img{
+            height: 310px;
+            width: 220px;
+        }
+        span{
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            z-index: 1;
+            
+        }
+    }
+    
+    .sec_heading_online{
+        text-align: center;
+        font-weight: 400;
+        span{
+            color: $cta-color;
+            font-weight: 500;
+        }
+    }
+    .app_download_store{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        li{
+            text-align: center;
+        }
+        span{
+            display: block;
+        }
+        span:last-child{
+            color: rgba($color: #fff, $alpha: 0.7);
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    
+}
+
+/* Responsive Css Code */
+
+/* Breackpoint 1440px */
+@media only screen and (max-width: 1440px){
+    .sec_online_anytime {
+        .container{
+            padding: 0;
+        }
+        .responsive_container{
+            padding: 0 20px;
+        }
+    }
+}
+
+/* Breackpoint 991px */
+@media only screen and (max-width: 991px){
+    .sec_online_anytime{
+        .boder_line{
+            margin: 60px auto;
+        }
+        .sec_online_anytime .sec__img{
+            margin: 25px 0 65px;
+        }
+         
+        .app_download_store{
+            gap: 20px;
+            span img{
+                height: 45px;
+            }
+            span:last-child{
+                font-size: 14px ;
+            }
+        } 
+    } 
+}
+
+/* Breackpoint 767px */
+@media only screen and (max-width: 767px){
+    .sec_online_anytime {
+        .counter_card span span{
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .counter_card span{
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .counter_card .counter_category{
+            font-size: 12px;
+        }
+        .counter_card{
+            padding: 5px 6px;
+            >span{
+                margin-bottom: 4px;
+            }
+        }
+        .boder_line{
+            margin: 30px auto;
+        }
+        .sec__img{
+            margin: 15px 0 30px;
+        }
+        .app_download_store{
+            gap: 11px;
+            span img{
+                height: 25px;
+            }
+            span:last-child{
+                font-size: 12px ;
+            }
+        }
+        .sec__img span{
+            left: -10px;
+        }
+        .sec__img span img{
+            height: 100px;
+            width: 100px;
+        }
+    }
+}

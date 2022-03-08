@@ -1,0 +1,133 @@
+.sec_faq{
+    .sec_content{
+        display: flex;
+        justify-content: space-between;
+        gap:30px;
+    }
+    .sec_text{
+        max-width: 475px;
+        width: 100%;
+    }
+    .sec_button .t-normal-color{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 13px 20px;
+        width: fit-content;
+        border: 1px solid $cta-color;
+        border-radius: 4px;
+        color: $cta-color;
+        transition: 0.3s;
+        span{
+            display: flex;
+            svg path{
+                stroke: $cta-color;
+            }
+        }
+    }
+    .sec_button .t-normal-color:hover{
+        background-color: $cta-color;
+        color: $bg-normal-color;
+        span{
+            
+            svg path{
+                stroke: $bg-normal-color;
+            }
+        }
+    }
+    .sec_button{
+        margin-top: 50px;
+    }
+    .faq_ques{
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        h3{
+            font-weight: 500;
+            font-size: 22px;
+            color:$txt-normal-color;
+        }
+    }
+    .faq_ques.active h3{
+        opacity: 0.8;
+    }
+    .faq_ans{
+        margin-top: 20px;
+        height: 0;
+        visibility: hidden;
+        transition:height 0.5s;
+        overflow: hidden;
+        opacity: 0;
+        p{
+            font-weight: 500;
+            font-size: 22px;
+            color: #000;
+        }
+    }
+    .faq_ques.active~.faq_ans{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .sec_faq_content li{
+        padding-bottom: 20px;
+        border-bottom: 0.5px solid rgba(99, 111, 125, 0.3);
+        margin-top: 20px;
+    }
+    .sec_faq_content li:first-child{
+        margin-top: 0;
+    }
+    .sec_faq_content{
+        width: 50%;
+    }
+}
+
+
+/* Responsive Css Code */
+
+/* Breackpoint 1024px */
+@media only screen and (max-width: 1024px){
+    .sec_faq{
+        .sec_text{
+            display: flex;
+            justify-content: space-between;
+            max-width: 100%;
+            .sec_heading{
+                width: 71%;
+            }
+        }
+        .sec_faq_content{
+            width: 100%;
+        }
+        .sec_button{
+            margin-top: 0;
+        }
+        .sec_content{
+            flex-direction: column;
+            gap: 50px;
+        }
+        .sec_button .t-normal-color{
+            border: none;
+            padding: 0;
+        }
+    }
+}
+
+/* Breackpoint 767px */
+@media only screen and (max-width: 767px){
+    .sec_faq{
+        
+        .sec_content{
+            flex-direction: column;
+            gap: 30px;
+        }
+        .faq_ques,.faq_ans{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .faq_ans{
+            margin-top: 10px;
+        }
+        
+    } 
+}

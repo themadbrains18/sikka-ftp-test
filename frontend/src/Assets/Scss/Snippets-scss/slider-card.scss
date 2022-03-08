@@ -1,0 +1,144 @@
+.slider_card{
+    background-color: $txt-primary-color;
+    position: relative;
+    padding: 25px 20px;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    
+    .cirle_element{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        box-shadow: 0 0 200px $secondary-color;
+        background-color: #f5455b1c;
+    }
+    .card_header{
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        padding-bottom: 26px;
+        border-bottom: 1px solid #f7f8fa4d;
+    }
+    .card_heading{
+        color: $bg-normal-color;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .card_body_heading{
+        color: $bg-normal-color;
+        font-weight: 500;
+        font-size: 16px;
+        margin: 20px 0 5px;
+    }
+    .price{
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 32px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f7f8fa4d;
+        span{
+            margin-left: 10px;
+            color: $bg-normal-color;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+    .card_footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        .card_footer_heading{
+            color: $bg-normal-color;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+    .cta_button{
+        padding-block: 6.5px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+/* Responsive Css Code */
+
+/* Breackpoint 767px */
+@media only screen and (max-width: 767px){
+    .slider_card{
+        padding: 30px 15px;
+        .card_heading{
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .card_header{
+            gap: 10px;
+            padding-bottom: 19px;
+            img{
+                height: 30px;
+            }
+        }
+        .card_body_heading{
+            font-size: 12px;
+            margin: 10px 0 2px;
+        }
+        .price{
+            font-size: 22px;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+        .card_footer{
+            margin-top: 15px;
+            .card_footer_heading{
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+    .buy_sell_btn{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        z-index: 10;
+        button{
+            width: 50%;
+            padding: 12.5px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+    .buy_sell_btn~.btn_bg_layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        z-index: 9;
+    }
+    .update_trending_coin_tabs .coins_price > li{
+        margin-top: 10px;
+    }
+    .sec_coin_trade_data{
+        .view_more_btn{
+            .t-normal-color{
+                color:$cta-color;
+                font-weight: 500!important;
+            }
+            span svg path{
+                stroke: $cta-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+/* Common Slider  Card  */
+@import "../Snippets-scss/slider-card.scss";
+
+.sec_deposit_withdrawal .sec_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 34px;
+    h2{
+        font-weight: 500;
+        font-size: 22px;
+        color: #000;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: 0.3s;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    a:hover{
+        color: $cta-color;
+        svg path{
+            stroke: $cta-color;
+        }
+    }
+}
+
+
+/* Responsive Css Code */
+
+/* Breackpoint 767px */
+@media only screen and (max-width: 767px){
+    .sec_deposit_withdrawal .sec_header{
+        margin-bottom: 15px;
+    }
+    .sec_deposit_withdrawal .sec_header h2{
+        font-size: 16px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 60%;
+    }
+    .sec_deposit_withdrawal .container{
+        padding: 0;
+        .sec_header{
+            padding: 0 20px;
+        }
+    }
+}
+
+/* Breackpoint 575px */
+@media only screen and (max-width: 575px){
+    .sec_deposit_withdrawal .sec_header h2{
+        font-weight: 400;
+    }
+}

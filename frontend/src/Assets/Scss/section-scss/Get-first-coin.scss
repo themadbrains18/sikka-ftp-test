@@ -1,0 +1,140 @@
+.sec_get_first_Coin{
+    .cta_button{
+        box-shadow: 0 0 170px #F9B403;
+    }
+    .sec_content{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    .sec_content .sec_text:first-child{
+        max-width: 595px;
+        width: 100%;
+    }
+    .sec_content .sec_text:last-child{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        max-width: 690px;
+        width: 100%;
+    }
+    .sec_content .sec_text .create_accc_step:last-child{
+        border-bottom: none;
+        padding-bottom: 0;   
+    }
+    .sec_info{
+        margin: 30px 0 60px;
+        opacity: 0.7;
+    }
+    .create_accc_step{
+        display: flex;
+        gap: 50px;
+        border-bottom: 0.5px solid rgba(255,255,255,0.3);
+        padding-bottom: 50px;
+        opacity: 0.7;
+    }
+    .step_info{
+        h3{
+            font-weight: 500;
+            font-size: 32px;
+            margin-bottom: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        span{
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .step_number{
+        background-color: #474B53;
+        border-radius: 10px;
+        font-size: 64px;
+        font-weight: 400;
+        height: 116px;
+        width: 100%;
+        max-width: 116px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}
+
+/* Responsive Css Code */
+
+/* Breackpoint 1440px */
+@media only screen and (max-width: 1440px){
+    .sec_get_first_Coin .create_accc_step{
+        gap: 30px;
+    }
+}
+
+/* Breackpoint 1200px */
+@media only screen and (max-width: 1200px){
+    .sec_get_first_Coin {
+        .sec_content{
+            flex-direction: column;
+            gap: 40px;
+            .sec_text:first-child,.sec_text:last-child{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+/* Breackpoint 767px */
+@media only screen and (max-width: 767px){
+    .sec_get_first_Coin {
+        .create_accc_step{
+            gap: 15px;
+        }
+        .sec_info{
+            margin: 15px 0 40px;
+            font-size: 12px;
+        }
+        .create_accc_step{
+            padding-bottom: 35px;
+            .step_number{
+                height: 90px;
+                max-width: 90px;
+            }
+            .step_info{
+                h3{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+        .sec_content .sec_text:last-child{
+            gap: 35px;
+        }
+    }
+}
+
+/* Breackpoint 575px */
+@media only screen and (max-width: 575px){
+    .sec_get_first_Coin {
+    .cta_button{
+        width: 100%;
+        text-align: center;
+    }
+    .sec_content .sec_text:last-child{
+        gap: 20px;
+    }
+    .create_accc_step{
+        padding-bottom: 20px;
+        .step_number{
+            height: 68px;
+            max-width: 68px;
+        }
+    }
+    .step_info {
+        width: 75%;
+    }
+}
+}

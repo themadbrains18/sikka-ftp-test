@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
+
+/* Common Css Code */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.font-w-500{
+    font-weight: 500;
+}
+.font-w-600{
+    font-weight: 600;
+}
+/* Color Variables */
+
+/* Main Color */
+$primary-color: #F9D003;
+$secondary-color: #F5455B;
+$normal-color: #24AE8F;
+$cta-color:#F9B403;
+/* Bg color Variables */
+$bg-primary-color: #131822;
+$bg-secondary-color: #F7F8FA;
+$bg-normal-color: #FFFFFF;
+
+/* Txt color Variables */
+$txt-primary-color: #091133;
+$txt-secondary-color: #c6538c;
+$txt-normal-color: #636F7D;
+
+/* Common Classes */
+
+// First Color Category
+.f-primary-color{color: $primary-color;}
+.f-primary-bg{background-color: $primary-color;}
+.f-secondary-color{color: $secondary-color;}
+.f-secondary-bg{background-color: $secondary-color;}
+.f-normal-color{color: $normal-color;}
+.f-normal-bg{background-color: $normal-color;}
+
+.f-cta-bg{background-color: $cta-color;}
+.f-cta-color{color: $cta-color;}
+// Second Color Category
+.s-primary-color{color: $bg-primary-color;}
+.s-primary-bg{background-color: $bg-primary-color;}
+.s-secondary-color{color: $bg-secondary-color;}
+.s-secondary-bg{background-color: $bg-secondary-color;} 
+.s-normal-color{color: $bg-normal-color;}
+.s-normal-bg{background-color: $bg-normal-color;}
+
+
+// Third Color Category
+.t-primary-color{color: $txt-primary-color;}
+.t-primary-bg{background-color: $txt-primary-color;}
+.t-secondary-color{color: $txt-secondary-color;}
+.t-secondary-bg{background-color: $txt-secondary-color;}
+.t-normal-color{color: $txt-normal-color;}
+.t-normal-bg{background-color: $txt-normal-color;}
+
+
+/* Common Section Css Code */
+.sec_heading{
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.sec_info{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.cta_button{
+    padding: 12.5px 20px;
+    font-weight: 600;
+    font-size: 22px;
+    border:1px solid $cta-color;
+    color: $cta-color;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+}
+.line-height-0{
+    line-height: 0;
+}
+.cta_button:hover{
+    background-color:$primary-color;
+    color: $txt-primary-color;
+}
+
+
+.txt-center{
+    text-align: center; 
+}
+.txt-right{
+    text-align: right;
+}
+.txt-ellipsis{
+    text-overflow: ellipsis;
+}
+
+.opacity-0-7{
+    opacity: 0.7;
+}
+.opacity-0-8{
+    opacity: 0.8;
+}
+/* Common Spacing */
+.sec-py{
+    padding: 80px 0;
+}
+.sec-pt{
+    padding-top: 80px;
+}
+.sec-pb{
+    padding-bottom: 80px;
+}
+
+.card_heading{
+    font-weight: 500;
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 991px){
+    .sec-py{
+        padding: 60px 0;
+    }
+    .sec_heading{
+        font-size:45px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .cta_button{
+    background-color:$primary-color;  
+    color:$txt-primary-color;
+    }
+    .sec-py{
+        padding: 30px 0;
+    }
+    .sec_heading{
+        font-size:32px;
+    } 
+}

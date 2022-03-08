@@ -1,0 +1,183 @@
+.sec_hero_banner{
+    padding-top:52px;
+    .sec_content{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        margin:0 0 0 auto;
+        padding-left:20px;
+    }
+    
+    .sec_text{
+        padding: 40px 0;
+        max-width: 710px;
+        margin: 0 0 0 auto;
+    }
+    .sec_img,
+    .sec_text_wrap{
+        width: 50%;
+    }
+    .sec_banner_heading{
+        font-size: 84px;
+        text-transform: capitalize;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+        .banner_trade{
+            position: relative;
+            color: $bg-normal-color;
+        }
+        .banner_trade::after{
+            content: "";
+            position: absolute;
+            top: calc(50% - 11px);
+            left: calc(50% + 33px);
+            transform: translate(-50%,-50%);
+            background-image: url("../../Icons/banner-shape-icon.svg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 346.36px;
+            height: 163px;
+            z-index: -1;
+        }
+        span{
+            color: $cta-color;
+            display: inline-block;
+        }
+    }
+    .sec__banner__info{
+        font-weight: 500;
+        font-size: 22px;
+        padding: 20px 0 50px;
+        span{
+            font-weight: 700;
+            color: $cta-color;
+        }
+    }
+    .banner_download_btn{
+        border: none;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        span{
+            display: inherit;
+        }
+    }
+    .cta_button{
+        box-shadow: 0 0 170px #f9b403cf;
+    }
+    .banner_btn{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .cta_button-m{
+        display: none;
+    }
+    .sec_img{
+        text-align: right;
+    }
+    .sec_img~div{
+        display: none;
+    }
+}
+
+
+/* Responsive Css Code */
+
+/* Breackpoint 1440px */
+@media only screen and (max-width: 1440px){
+    .sec_hero_banner .sec_banner_heading{
+        font-size: 62px;
+    }
+    .sec_hero_banner .sec__banner__info{
+        font-size: 20px;
+    }
+    .sec_hero_banner .sec_banner_heading .banner_trade::after{
+        height: 116px;
+        left: calc(50% + 20px);
+        width: 266.36px;
+    }
+    // .sec_hero_banner .sec_text{
+    //     width: 55%;
+    // }
+    .sec_hero_banner .sec__banner__info{
+        padding: 15px 0 30px;
+    }
+    
+}
+
+/* Breackpoint 1200px */
+@media only screen and (max-width: 1200px){
+    
+    .sec_hero_banner .sec_img img{
+        height: 400px;
+    }
+}
+
+/* Breackpoint 1024px */
+@media only screen and (max-width: 1024px){
+    
+    .sec_hero_banner .sec_content{
+        display: block;
+    }
+    .sec_hero_banner .sec_text{
+        max-width: 100%;
+    }
+    .sec_hero_banner .sec_img,
+     .sec_hero_banner .sec_text_wrap{
+        width: 100%;
+    }
+    .sec_hero_banner .sec_text{
+        width: 100%;
+        padding:0 20px 0 0;
+    }
+    .banner_btn{
+        margin-bottom: 30px;
+    }
+    .sec_hero_banner .sec_banner_heading .banner_trade::after{
+        display: none;
+    }
+    .sec_hero_banner .sec_img{
+        text-align: end;
+    }
+    .sec_hero_banner .sec_img img{
+        height: initial;
+    }
+}
+
+/* Breackpoint 991px */
+@media only screen and (max-width: 991px){
+    .sec_hero_banner .sec_banner_heading{
+        font-size: 45px;
+    }
+}
+
+/* Breackpoint 767px */
+@media only screen and (max-width: 767px){
+    .sec_hero_banner .banner_btn{
+        display: none;
+    }
+    .sec_hero_banner .sec_img~div{
+        display: block;
+    }   
+    .sec_hero_banner .sec_img+div{
+        padding-right:20px;
+    }
+    .sec_hero_banner .cta_button-m{
+        display: block;
+        color: $txt-primary-color;
+    }
+    .sec_hero_banner .sec_banner_heading{
+        font-size: 45px;
+    }
+    .sec_hero_banner .sec__banner__info{
+        font-size: 16px;
+    }
+    .sec_hero_banner{
+        padding-bottom: 30px;
+    }
+}

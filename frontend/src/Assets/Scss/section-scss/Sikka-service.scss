@@ -1,0 +1,100 @@
+.sec_sikka__service{
+    .service__card{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(349px,1fr));
+        gap: 30px;
+    }
+    .card{
+        padding: 20px;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+    .card:hover{
+        background-color: $bg-normal-color;
+        a img{
+            display: block;
+        }
+    }
+    .sec_heading{
+        margin-bottom: 60px;
+    }
+    .card_heading{
+        font-weight: 500;
+        font-size: 32px;
+        margin: 50px 0 20px;
+    }
+    .card_info{
+        font-size: 16px;
+        font-weight: 400;
+        padding-bottom: 40px;
+        border-bottom: 0.5px solid rgba(99, 111, 125, 0.3);
+    }
+    .card a{
+        font-weight: 500;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 40px;
+        width: fit-content;
+        img{
+            display: none;
+        }
+    }
+    
+}
+
+
+/* Responsive Css Code */
+
+/* Breackpoint 1024px */
+@media only screen and (max-width: 1024px){
+    .sec_sikka__service .sec_heading{
+        margin-bottom: 40px;
+    }
+}
+
+/* Breackpoint 767px */
+@media only screen and (max-width: 767px){
+    .sec_sikka__service {
+        .sec_heading{
+            margin-bottom: 30px;
+        }
+        .service__card{
+            gap: 20px;
+        }
+        .card{
+            background-color: $bg-normal-color;
+        }
+        .card>img{
+            height: 70px;
+        }
+        .card a img{
+            display: block;
+        }
+    }
+}
+
+/* Breackpoint 575px */
+@media only screen and (max-width: 575px){
+    .sec_sikka__service{
+        .card{
+            padding: 10px;
+        }
+        .card_heading{
+            margin:  25px 0 10px;
+            font-size: 22px;
+        }
+        .card_info{
+            font-size: 12px;
+            padding-bottom: 20px;
+        }
+        .card a{
+            margin-top: 20px;
+        }
+        .service__card{
+            grid-template-columns:1fr;   
+        }
+    }
+     
+}
