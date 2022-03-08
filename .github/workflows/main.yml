@@ -30,18 +30,3 @@ jobs:
         password: ${{ secrets.madbrains_uiux_ftp }}
         local-dir: ./frontend/build/
         server-dir: skikka.theuxuidesigner.com/public_html/
-
-on: push
-name: 🚀 Deploy website on push
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    
-
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
-      with:
-        
-
-
-        
