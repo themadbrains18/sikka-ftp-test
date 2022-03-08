@@ -12,7 +12,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: theuxuidesigner.com
-          username: uiuxabhi@theuxuidesigner.com
-          password: ${{ secrets.madbrains_uiux_ftp }}
-          local-dir: ./frontend/build/
-          server-dir: skikka.theuxuidesigner.com/public_html/
+        username: uiuxabhi@theuxuidesigner.com
+        password: ${{ secrets.madbrains_uiux_ftp }}
+        local-dir: ./frontend/build/
+        server-dir: skikka.theuxuidesigner.com/public_html/
