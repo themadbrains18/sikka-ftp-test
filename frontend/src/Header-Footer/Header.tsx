@@ -64,20 +64,20 @@ const Header = (props: propsList) => {
                                 {/* Header Left Side */}
                                 <div className="header_nav-left">
                                     {/* Header Logo */}
-                                    <Link to="/" className="header_logo">
+                                    <Link to=" /" className="header_logo">
                                         <img src={require('../Assets/Icons/logo.svg').default} alt="" />
                                     </Link>
                                 </div>
                                 {/* Header Right Side */}
                                 <div className="header_nav-rigth">
-                                    <ul className="header_navlist">
+                                    <ul className="header_navlist sadsdsadsd">
 
                                         <li className="header_navitem">
                                             <Link to="/login" className="nav_btn s-normal-color header-btn font-w-500">
                                                 Log In
                                             </Link>
                                             <Link to="/signup" className="nav_btn s-normal-color header-btn font-w-500">
-                                                Sign Up
+                                                new Sign Up
                                             </Link>
                                         </li>
 
