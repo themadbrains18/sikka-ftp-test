@@ -15,8 +15,8 @@ jobs:
       
     - name: 🔨 Build Project
       run: |
-        ./frontend/npm install
-        ./frontend/npm run build
+        frontend/npm install
+        frontend/npm run build
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -24,5 +24,5 @@ jobs:
         server: theuxuidesigner.com
         username: uiuxabhi@theuxuidesigner.com
         password: ${{ secrets.madbrains_uiux_ftp }}
-        local-dir: ./frontend/build/
+        local-dir: ./frontend/
         server-dir: skikka.theuxuidesigner.com/public_html/
