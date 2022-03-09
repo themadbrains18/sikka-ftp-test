@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.039c2eb9.css",
-    "main.js": "./static/js/main.0a38c09e.js",
+    "main.js": "./static/js/main.f9799b43.js",
     "static/js/787.714b4ffa.chunk.js": "./static/js/787.714b4ffa.chunk.js",
     "static/media/trading-anytime.png": "./static/media/trading-anytime.4dbf32ddf7f62314ed9d.png",
     "static/media/faq-banner-img.jpg": "./static/media/faq-banner-img.71ce37d1cadd5ecf7768.jpg",
@@ -29,8 +29,8 @@
     "static/media/spot-order.svg": "./static/media/spot-order.065433cedda735ed6bd2cf5591bfeb7d.svg",
     "static/media/banner-download-icon.svg": "./static/media/banner-download-icon.cdf2b5a03ad188015edbfa19d08de18c.svg",
     "static/media/pin-icon.svg": "./static/media/pin-icon.d9a8a0bebaccfc9bb489bc8273bf3def.svg",
-    "static/media/filter-icon.svg": "./static/media/filter-icon.12e7b0aafa07a155d329e7b95c2ebfdb.svg",
     "index.html": "./index.html",
+    "static/media/filter-icon.svg": "./static/media/filter-icon.12e7b0aafa07a155d329e7b95c2ebfdb.svg",
     "static/media/bg-element.svg": "./static/media/bg-element.6ccd9828bc3a62b525f62a12f79435aa.svg",
     "static/media/search-icon.svg": "./static/media/search-icon.24f0782468e597ff7d5e152e214bc105.svg",
     "static/media/checkbox.svg": "./static/media/checkbox.81c4c6f659ec27b7455b47ee2d74420b.svg",
@@ -41,11 +41,11 @@
     "static/media/arrow-icon-dropwdown.svg": "./static/media/arrow-icon-dropwdown.505e9b8f0470a708a3a29d5fbcac0013.svg",
     "static/media/arrow-icon.svg": "./static/media/arrow-icon.56071eb477ed15018ed9.svg",
     "main.039c2eb9.css.map": "./static/css/main.039c2eb9.css.map",
-    "main.0a38c09e.js.map": "./static/js/main.0a38c09e.js.map",
+    "main.f9799b43.js.map": "./static/js/main.f9799b43.js.map",
     "787.714b4ffa.chunk.js.map": "./static/js/787.714b4ffa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.039c2eb9.css",
-    "static/js/main.0a38c09e.js"
+    "static/js/main.f9799b43.js"
   ]
 }
