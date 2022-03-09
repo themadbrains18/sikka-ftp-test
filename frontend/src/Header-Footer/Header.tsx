@@ -64,7 +64,7 @@ const Header = (props: propsList) => {
                                 {/* Header Left Side */}
                                 <div className="header_nav-left">
                                     {/* Header Logo */}
-                                    <Link to=" /" className="header_logo">
+                                    <Link to="/" className="header_logo">
                                         <img src={require('../Assets/Icons/logo.svg').default} alt="" />
                                     </Link>
                                 </div>
@@ -176,6 +176,9 @@ const Header = (props: propsList) => {
                                     {/* Header Left Side */}
                                     <div className="header_nav-left">
                                         {/* Header Logo */}
+
+
+                                        
                                         <Link to="/" className="header_logo">
                                             <img src={require('../Assets/Icons/logo.svg').default} alt="" />
                                         </Link>

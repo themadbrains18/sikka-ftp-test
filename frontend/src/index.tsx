@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename={"/"}>
+    <BrowserRouter basename={"./http://skikka.theuxuidesigner.com//"}>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
