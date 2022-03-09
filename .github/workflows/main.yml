@@ -12,10 +12,10 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
 
-    - name: Use Node.js 16
+    - name: Use Node.js 14
       uses: actions/setup-node@v2
       with:
-        node-version: '16'
+        node-version: '14'
       
     - name: 🔨 Build Project
       run: |
@@ -28,5 +28,5 @@ jobs:
         server: theuxuidesigner.com
         username: uiuxabhi@theuxuidesigner.com
         password: ${{ secrets.madbrains_uiux_ftp }}
-        local-dir: ./frontend/build/
+        local-dir: ./frontend/
         server-dir: skikka.theuxuidesigner.com/public_html/

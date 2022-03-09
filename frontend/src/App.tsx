@@ -33,7 +33,6 @@ function App() {
           <Route path="/forgot-password" element={<LoginSignup formType="forgot-password" getheaderHeightlet={getheaderHeightlet}/>} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/market" element={<MarketPage />} />
-
           <Route path="*" element={<IndexPage />}/>
         </Routes>
       </main>
